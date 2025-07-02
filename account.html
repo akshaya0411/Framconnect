@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm connect - Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>farm connect</h1>
+    </header>
+    
+    <main>
+        <div class="account-form">
+            <h2>Create Account</h2>
+            <form id="registerForm" onsubmit="registerUser(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+            
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="loginUser(event)">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 farm connect</p>
+    </footer>
+
+    <script src="account.js"></script>
+</body>
+</html>
